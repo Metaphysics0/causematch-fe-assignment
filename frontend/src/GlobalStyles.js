@@ -18,6 +18,9 @@ export const GlobalStyle = createGlobalStyle`
     /* This defines what 1rem is */
     font-size: 62.5%; // 1rem == 10px. (10 / 16 == 62.5%)
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    @media only screen and (max-width: 55em) {
+      font-size: 55%;
+    }
   }
   body {
     box-sizing: border-box;

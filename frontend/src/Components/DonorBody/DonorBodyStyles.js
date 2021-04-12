@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Search } from '@styled-icons/boxicons-regular/Search';
 
 export const Body = styled.div`
   background-color: #f4f4f4;
@@ -10,16 +11,32 @@ export const InputLabel = styled.label`
   font-size: 1.45rem;
 `;
 export const OrderByInput = styled.select`
-  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  padding: 0.75rem 1rem;
   outline: none;
   border-radius: 10px;
+`;
+export const InputWrap = styled.div`
+  position: relative;
 `;
 export const SearchInput = styled.input`
-  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  padding: 0.75rem 1rem;
   outline: none;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 1px solid purple;
+  transition: box-shadow 0.3s ease;
+  &:focus {
+    box-shadow: var(--box-shadow);
+  }
 `;
+export const SearchIcon = styled(Search)`
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 1.25rem;
+`;
+
 export const TopRow = styled.div`
   display: flex;
   justify-content: space-around;

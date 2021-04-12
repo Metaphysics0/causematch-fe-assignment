@@ -28,6 +28,7 @@ export const InputLabel = styled.label`
   line-height: 1.5;
 `;
 export const InputField = styled.input`
+  font-size: 1.4rem;
   padding: 1.1rem 2rem;
   border-radius: 20px;
   outline: none;
@@ -46,6 +47,7 @@ export const Textarea = styled.textarea`
   border-radius: 10px;
   border: 2px solid #be8abf;
   width: 80%;
+  font-family: inherit;
   transition: box-shadow 0.3s ease;
   &:focus,
   &:active {
@@ -53,11 +55,12 @@ export const Textarea = styled.textarea`
   }
 `;
 export const Button = styled.button`
+  font-size: 1.5rem;
   display: inline-block;
   padding: 1rem;
   border-radius: 100px;
   width: 15rem;
-  border: 2px solid #be8abf;
+  border: 3px solid #be8abf;
   text-transform: uppercase;
   background: #ffe268;
   font-weight: 600;
@@ -76,6 +79,9 @@ export const Button = styled.button`
 `;
 export const Row = styled.div`
   display: flex;
+  @media only screen and (max-width: 55em) {
+    flex-direction: column;
+  }
   input {
     margin: 0 1rem;
   }

@@ -8,6 +8,7 @@ class DonorBody extends Component {
   render() {
     return (
       <S.Body>
+        {console.log('DONORS', this.props.donors)}
         {/* 'Sort by' and 'search' input fields  */}
         <S.TopRow>
           <S.InputLabel>
@@ -19,7 +20,10 @@ class DonorBody extends Component {
               <option value="lastName">Last Name</option>
             </S.OrderByInput>
           </S.InputLabel>
-          <S.SearchInput type="text" placeholder="Search..." />
+          <S.InputWrap>
+            <S.SearchInput type="text" placeholder="Search..." />
+            <S.SearchIcon />
+          </S.InputWrap>
         </S.TopRow>
         {/* Grid area of all donor cards */}
         <S.DonorBody>

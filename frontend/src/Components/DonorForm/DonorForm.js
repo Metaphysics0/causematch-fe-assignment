@@ -27,7 +27,7 @@ class DonorForm extends Component {
   render() {
     return (
       <>
-        <S.Title>Donation Center</S.Title>
+        <S.Title>Donation Center 💸</S.Title>
         <S.DonorForm onSubmit={this.handleSubmit}>
           <S.Row>
             <S.InputLabel>
@@ -50,9 +50,13 @@ class DonorForm extends Component {
           </S.Row>
           <S.InputLabel>
             Message: (Optional)
-            <S.Textarea name="message" ref={(input) => (this.getMessage = input)}></S.Textarea>
+            <S.Textarea
+              placeholder="Leave a note!"
+              name="message"
+              ref={(input) => (this.getMessage = input)}
+            ></S.Textarea>
           </S.InputLabel>
-          <S.Button type="submit">Submit</S.Button>
+          <S.Button type="submit">Submit!</S.Button>
         </S.DonorForm>
       </>
     );
