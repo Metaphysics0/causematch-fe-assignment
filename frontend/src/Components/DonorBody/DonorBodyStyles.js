@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 import { Search } from '@styled-icons/boxicons-regular/Search';
+// import * as BS from '@styled-icons/bootstrap';
+import { QuestionCircle } from '@styled-icons/bootstrap/QuestionCircle';
 
 export const Body = styled.div`
   background-color: #f4f4f4;
   border-radius: 10px;
   padding: 1rem;
+  border: 1px solid red;
 `;
 export const InputLabel = styled.label`
   color: grey;
@@ -39,7 +42,7 @@ export const SearchIcon = styled(Search)`
 
 export const TopRow = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 2rem;
 `;
 
@@ -50,4 +53,15 @@ export const DonorBody = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
   gap: 1.5rem;
+`;
+
+export const ToolTip = styled(QuestionCircle)`
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #cabdff;
+  }
 `;
